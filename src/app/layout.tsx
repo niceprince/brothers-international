@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Nunito, Geist_Mono } from "next/font/google";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "./globals.css";
+import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
+import BootstrapClient from "@/components/common/BootstrapClient";
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const geistSans = Nunito({
+  variable: "--font-nunito-sans",
   subsets: ["latin"],
 });
 
@@ -25,7 +31,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <Header />
+        <main>{children}</main>
+        <Footer />
+        <BootstrapClient />
       </body>
     </html>
   );

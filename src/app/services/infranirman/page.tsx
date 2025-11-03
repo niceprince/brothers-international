@@ -18,7 +18,7 @@ const InfranirmanService = () => {
           alt="Infra nirman"
           width="1920"
           height="1129"
-          style={{ width: "100%" }}
+          style={{ width: "100%", height: "auto" }}
         />
       </div>
       <section>

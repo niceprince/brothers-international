@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -11,13 +12,14 @@ const Footer = () => {
                 <span className="sitename">Brothers International</span>
               </a>
               <div className="footer-contact pt-3">
-                <p>A108 Adam Street</p>
-                <p>New York, NY 535022</p>
+                <p>UG-2, Mohta Building,</p>
+                <p>4 Bhikaji Cama Place, New Delhi-110066</p>
                 <p className="mt-3">
-                  <strong>Phone:</strong> <span>+1 5589 55488 55</span>
+                  <strong>Phone:</strong> <span>011-46591190, 9311778585</span>
                 </p>
                 <p>
-                  <strong>Email:</strong> <span>info@example.com</span>
+                  <strong>Email:</strong>{" "}
+                  <span>csd@brothersinternational.in</span>
                 </p>
               </div>
               <div className="social-links d-flex mt-4">
@@ -39,19 +41,19 @@ const Footer = () => {
               <h4>Useful Links</h4>
               <ul>
                 <li>
-                  <a href="#">Home</a>
+                  <Link href="/">Home</Link>
                 </li>
                 <li>
-                  <a href="#">About us</a>
+                  <Link href="/about">About us</Link>
                 </li>
                 <li>
-                  <a href="#">Services</a>
+                  <Link href="/services">Services</Link>
                 </li>
                 <li>
-                  <a href="#">Terms of service</a>
+                  <Link href="/term-of-service">Terms of service</Link>
                 </li>
                 <li>
-                  <a href="#">Privacy policy</a>
+                  <Link href="/privacy-policy">Privacy policy</Link>
                 </li>
               </ul>
             </div>
@@ -59,27 +61,18 @@ const Footer = () => {
               <h4>Our Services</h4>
               <ul>
                 <li>
-                  <a href="#">Web Design</a>
+                  <Link href="/services/courier">Courier</Link>
                 </li>
                 <li>
-                  <a href="#">Web Development</a>
-                </li>
-                <li>
-                  <a href="#">Product Management</a>
-                </li>
-                <li>
-                  <a href="#">Marketing</a>
-                </li>
-                <li>
-                  <a href="#">Graphic Design</a>
+                  <Link href="/services/infranirman">Infra Nirman</Link>
                 </li>
               </ul>
             </div>
             <div className="col-lg-4 col-md-12 footer-newsletter">
-              <h4>Our Newsletter</h4>
+              <h4>Get In Touch</h4>
               <p>
-                Subscribe to our newsletter and receive the latest news about
-                our products and services!
+                Subscribe us to long term bonding and receive the latest update
+                about our services!
               </p>
               <form
                 action="forms/newsletter.php"

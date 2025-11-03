@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect } from "react";
 
 const Carousel = () => {
@@ -19,6 +20,7 @@ const Carousel = () => {
           data-bs-interval={5000}
         >
           <div className="carousel-item active">
+            {/* <Image src="/images/carousel/hero-carousel-1.jpg" alt="" fill /> */}
             <Image src="/images/carousel/hero-carousel-1.jpg" alt="" fill />
             <div className="carousel-container">
               <h2>
@@ -38,39 +40,37 @@ const Carousel = () => {
               </a>
             </div>
           </div>
-          {/* End Carousel Item */}
           <div className="carousel-item">
             <Image src="/images/carousel/hero-carousel-2.jpg" alt="" fill />
             <div className="carousel-container">
-              <h2>At vero eos et accusamus</h2>
+              <h2>
+                Provides services for Express Parcel, International, and
+                E-commerce
+              </h2>
               <p>
-                Nam libero tempore, cum soluta nobis est eligendi optio cumque
-                nihil impedit quo minus id quod maxime placeat facere possimus,
-                omnis voluptas assumenda est, omnis dolor repellendus.
-                Temporibus autem quibusdam et aut officiis debitis aut.
+                From first-mile pickup to last-mile delivery, we provide
+                end-to-end logistics support that ensures every parcel reaches
+                your customers quickly and safely.
               </p>
               <a href="#featured-services" className="btn-get-started">
                 Get Started
               </a>
             </div>
           </div>
-          {/* End Carousel Item */}
           <div className="carousel-item">
             <Image src="/images/carousel/infra.jpg" alt="" fill />
             <div className="carousel-container">
-              <h2>Temporibus autem quibusdam</h2>
+              <h2>🏗️ Infra Nirman & Construction Services</h2>
               <p>
-                Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt omnis iste natus error sit voluptatem accusantium.
+                With years of experience and a team of skilled professionals, we
+                deliver residential, commercial, industrial, and public
+                infrastructure projects that stand the test of time.
               </p>
-              <a href="#featured-services" className="btn-get-started">
+              <Link href="/services/infranirman" className="btn-get-started">
                 Get Started
-              </a>
+              </Link>
             </div>
           </div>
-          {/* End Carousel Item */}
           <button
             className="carousel-control-prev"
             data-bs-target="#carouselSection"
@@ -93,7 +93,6 @@ const Carousel = () => {
               aria-hidden="true"
             />
           </button>
-          {/* <ol className="carousel-indicators" /> */}
           <div className="carousel-indicators">
             <button
               type="button"

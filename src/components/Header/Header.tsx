@@ -12,10 +12,7 @@ const Header = () => {
         className="header d-flex align-items-center sticky-top"
       >
         <div className="container-fluid container-xl position-relative d-flex align-items-center">
-          <Link
-            href="index.html"
-            className="logo d-flex align-items-center me-auto"
-          >
+          <Link href="/" className="logo d-flex align-items-center me-auto">
             {/* Uncomment the line below if you also wish to use an image logo */}
             {/* <img src="assets/img/logo.png" alt=""> */}
             {/* <h1 className="sitename">Brothers International</h1> */}
@@ -41,10 +38,10 @@ const Header = () => {
                 </Link>
                 <ul>
                   <li>
-                    <Link href="/team">Team</Link>
+                    <Link href="/about/team">Team</Link>
                   </li>
                   <li>
-                    <Link href="/testimonials">Testimonials</Link>
+                    <Link href="/about/testimonials">Testimonials</Link>
                   </li>
                   <li>
                     <Link href="#">Others</Link>
@@ -58,10 +55,10 @@ const Header = () => {
                 </Link>
                 <ul>
                   <li>
-                    <Link href="/courier">Courier Service</Link>
+                    <Link href="/services/courier">Courier</Link>
                   </li>
                   <li>
-                    <Link href="Infra Nirman">Infra Nirman</Link>
+                    <Link href="/services/infranirman">Infra Nirman</Link>
                   </li>
                 </ul>
               </li>
@@ -74,8 +71,8 @@ const Header = () => {
             </ul>
             <i className="mobile-nav-toggle d-xl-none bi bi-list" />
           </nav>
-          <Link className="btn-getstarted" href="about.html">
-            Get Started
+          <Link className="btn-getstarted" href="/services/infranirman">
+            Explore About Infranirman
           </Link>
         </div>
       </header>
